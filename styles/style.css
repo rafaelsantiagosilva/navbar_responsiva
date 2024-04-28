@@ -1,0 +1,130 @@
+@import url(./reset.min.css);
+@import url(../node_modules/bootstrap-icons/font/bootstrap-icons.min.css);
+
+:root {
+	/*Miscellaneous*/
+	--black: #191919;
+	--white: #f5f5f5;
+	--gray: rgb(220, 220, 220);
+}
+
+html {
+	/*Typography stuff*/
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+header.main_header {
+	/*Box model stuff*/
+	width: 100vw;
+	background-color: var(--black);
+	/*Typography stuff*/
+	color: var(--white);
+}
+
+.btn_hamburguer {
+	/*Display stuff*/
+	display: none;
+}
+
+.btn_hamburguer {
+	/*Display stuff*/
+	display: none;
+	/*Box model stuff*/
+	border: none;
+	background-color: var(--black);
+	/*Typography stuff*/
+	color: var(--white);
+	/*Miscellaneous*/
+	box-shadow: none;
+}
+
+.hamburguer {
+	display: none;
+}
+
+.navbar {
+	/*Display stuff*/
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	/*Box model stuff*/
+	padding: 2% 5%;
+}
+
+.main_title {
+	/*Display stuff*/
+	display: flex;
+	align-items: center;
+	/*Box model stuff*/
+	padding: 0.9%;
+	border: 1px solid var(--white);
+	border-radius: 5px;
+	/*Typography stuff*/
+	font-size: 120%;
+	font-weight: 800;
+	/*Manipulations stuff*/
+	transition: 400ms;
+}
+
+.main_title:hover {
+	/*Box model stuff*/
+	background-color: var(--white);
+	/*Typography stuff*/
+	color: var(--black);
+	/*Miscellaneous*/
+	cursor: pointer;
+}
+
+.navbar ul {
+	/*Display stuff*/
+	display: flex;
+	flex-direction: row;
+	align-self: center;
+}
+
+.navbar a {
+	/*Typography stuff*/
+	font-weight: 600;
+	text-decoration: none;
+	color: var(--white);
+}
+
+.navbar a:hover {
+	/*Typography stuff*/
+	color: var(--gray);
+}
+
+.navbar li {
+	/*Box model stuff*/
+	margin: 2%;
+}
+
+.content {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.hello_world {
+	padding: 2rem;
+	margin: 1rem;
+	text-align: center;
+	background-color: var(--gray);
+	border-radius: 5px;
+	box-shadow: 3px 3px 9px 3px rgba(45, 45, 45, 0.399);
+	width: 40%;
+}
+
+.hello_world__title {
+	font-size: 190%;
+	margin: 1rem;
+	font-weight: 600;
+}
+
+footer.footer {
+	/*Box model stuff*/
+	width: 100vw;
+	padding: 2% 0;
+	/*Typography stuff*/
+	text-align: center;
+}

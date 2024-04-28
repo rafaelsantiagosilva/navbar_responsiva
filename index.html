@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-BR" dir="ltr">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Navbar Responsiva</title>
+		<link rel="stylesheet" href="./styles/style.css" />
+		<link rel="stylesheet" href="./styles/portrait.css" />
+	</head>
+	<body>
+		<header class="main_header">
+			<nav class="navbar">
+				<div class="hamburguer" id="hamburguer">
+					<button class="btn_close_hamburguer">
+						<i class="bi bi-x" id="close_hamburguer"></i>
+					</button>
+					<ul class="links">
+						<li><a href="#">Início</a></li>
+						<li><a href="#">Blogs</a></li>
+						<li><a href="#">Notícias</a></li>
+						<li><a href="#">Login</a></li>
+					</ul>
+				</div>
+
+				<button class="btn_hamburguer">
+					<i class="bi bi-list" id="btn_hamburguer"></i>
+				</button>
+				<h1 class="main_title"><i class="bi bi-code-slash"></i> Minha Navbar</h1>
+
+				<ul class="landscape">
+					<li><a href="#">Início</a></li>
+					<li><a href="#">Blogs</a></li>
+					<li><a href="#">Notícias</a></li>
+					<li><a href="#">Login</a></li>
+				</ul>
+			</nav>
+		</header>
+
+		<main class="content">
+
+               <section class="hello_world">
+                    <h2 class="hello_world__title">Hello World!</h2>
+                    <p>Fiz minha navbar responsiva!</p>
+               </section>
+          </main>
+
+		<footer class="footer">&copy;Rafael Santiago</footer>
+	</body>
+	<script>
+		const hamburguer = document.getElementById("hamburguer");
+		const btnClose = document.getElementById("close_hamburguer");
+		const btnHamburguer = document.getElementById("btn_hamburguer");
+
+		document.addEventListener("click", (e) => {
+			if (
+				(hamburguer.style.display == "none" || hamburguer.style.display == "") &&
+				e.target == btnHamburguer
+			) {
+				hamburguer.classList.remove("hamburguer_back");
+				hamburguer.classList.add("hamburguer_go");
+				setTimeout(() => {
+					hamburguer.style.display = "flex";
+				}, 305);
+			} else {
+				if (e.target == btnClose || !hamburguer.contains(e.target)) {
+					hamburguer.classList.remove("hamburguer_go");
+					hamburguer.classList.add("hamburguer_back");
+					setTimeout(() => {
+						hamburguer.style.display = "none";
+					}, 305);
+				}
+			}
+		});
+	</script>
+</html>

@@ -84,14 +84,14 @@
 				hamburguer.classList.add("hamburguer_go");
 				setTimeout(() => {
 					hamburguer.style.display = "flex";
-				}, 305);
+				}, 301);
 			} else {
 				if (e.target == btnClose || !hamburguer.contains(e.target)) {
 					hamburguer.classList.remove("hamburguer_go");
 					hamburguer.classList.add("hamburguer_back");
 					setTimeout(() => {
 						hamburguer.style.display = "none";
-					}, 305);
+					}, 301);
 				}
 			}
 		});

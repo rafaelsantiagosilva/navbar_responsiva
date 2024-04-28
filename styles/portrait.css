@@ -11,10 +11,15 @@
 	.main_title {
 		padding: 10px;
 		border: none;
+		display: flex;
+		align-items: center;
+		justify-content: center;
 	}
 
 	.btn_hamburguer {
-		display: block;
+		display: flex;
+		align-items: center;
+		justify-content: center;
 	}
 
 	.btn_close_hamburguer {
